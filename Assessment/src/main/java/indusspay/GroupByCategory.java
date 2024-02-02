@@ -13,8 +13,8 @@ import java.util.stream.StreamSupport;
 public class GroupByCategory {
 
     public static void main(String[] args) throws IOException {
-        String csvFilePath = "output\\UpdateEmptyIntoNull.csv";
-        String outputFilePath = "output\\GroupByCategory.csv";
+        String csvFilePath = "Assessment\\output\\UpdateEmptyIntoNull.csv";
+        String outputFilePath = "Assessment\\output\\GroupByCategory.csv";
 
         try (CSVParser csvParser = CSVParser.parse(new FileReader(csvFilePath), CSVFormat.DEFAULT.withHeader())) {
             Map<String, List<CSVRecord>> groupedByCategory = StreamSupport.stream(csvParser.spliterator(), false)
