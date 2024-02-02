@@ -17,8 +17,8 @@ public class UpdateEmptyIntoNull {
 
     public static void main(String[] args) {
 
-        String inputCsvFile = "src\\main\\resources\\Retail.csv";
-        String outputCsvFile = "output\\UpdateEmptyIntoNull.csv";
+        String inputCsvFile = "Assessment\\src\\main\\resources\\Retail.csv";
+        String outputCsvFile = "Assessment\\output\\UpdateEmptyIntoNull.csv";
 
         try {
             convertCsvToNull(inputCsvFile, outputCsvFile);
