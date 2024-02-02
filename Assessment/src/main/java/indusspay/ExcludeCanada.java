@@ -11,8 +11,8 @@ import java.util.stream.StreamSupport;
 
 public class ExcludeCanada {
     public static void main(String[] args) {
-        String csvFilePath = "output\\SortCSVByUnitPrice.csv";
-        String outputFilePath = "output\\FinalOutPut.csv";
+        String csvFilePath = "Assessment\\output\\SortCSVByUnitPrice.csv";
+        String outputFilePath = "Assessment\\output\\FinalOutPut.csv";
 
         try (CSVParser csvParser = CSVParser.parse(new FileReader(csvFilePath), CSVFormat.DEFAULT.withHeader())) {
             List<CSVRecord> filteredRecords = StreamSupport.stream(csvParser.spliterator(), false)
