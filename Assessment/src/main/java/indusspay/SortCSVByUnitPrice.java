@@ -17,8 +17,8 @@ import org.apache.commons.csv.CSVRecord;
 
 public class SortCSVByUnitPrice {
     public static void main(String[] args) {
-        String csvFilePath = "output\\GroupByCategory.csv";
-        String outputFilePath = "output\\SortCSVByUnitPrice.csv";
+        String csvFilePath = "Assessment\\output\\GroupByCategory.csv";
+        String outputFilePath = "Assessment\\output\\SortCSVByUnitPrice.csv";
 
         try (CSVParser csvParser = CSVParser.parse(new FileReader(csvFilePath), CSVFormat.DEFAULT.withHeader())) {
             List<CSVRecord> records = StreamSupport.stream(csvParser.spliterator(), false)
